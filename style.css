@@ -1,0 +1,53 @@
+/* Reset default styles for the list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  /* Display the menu items vertically on mobile */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  /* Style each menu item */
+  nav ul li {
+    margin: 0;
+  }
+  
+  /* Style the links */
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  /* Apply hover effect on links */
+  nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 3px;
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    /* Display the menu items horizontally on larger screens */
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    /* Adjust margin for menu items on larger screens */
+    nav ul li {
+      margin: 0 10px;
+    }
+  }
+  
