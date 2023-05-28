@@ -42,13 +42,14 @@ header {
 }
 
 .menu ul li a:hover {
-  color: rgb(159, 123, 58);
+  color: rgb(181, 119, 61);
 }
 
 /*dropdown menu */
-.menu ul li ul {
+.menu ul li .dropdown {
   display: none;
   position: absolute;
+  width: 65%;
   height: 25px;
   background: rgba(222, 224, 224, 0.5);
   padding: 3px 0px;
@@ -65,8 +66,7 @@ header {
 
 /*dropdown menu text when hovering*/
 .menu ul li ul li a:hover {
-  font-size: 17px;
-  color: rgb(159, 123, 58);
+  color: rgb(181, 119, 61);
 }
 
 .menu ul li.left_dropdown_menu {
@@ -74,10 +74,11 @@ header {
 }
 
 .menu ul .left_dropdown_menu::after {
-  content: '';
-  width: 0;
+  content: "";
+  width: 2px;
   height: 2px;
   background: black;
+  border: 1px solid black;
   display: block;
   margin: auto;
   transition: 0.6s;
@@ -88,10 +89,11 @@ header {
 }
 
 .menu ul .right_menu::after {
-  content: '';
-  width: 0;
+  content: "";
+  width: 2px;
   height: 2px;
   background: black;
+  border: 1px solid black;
   display: block;
   margin: auto;
   transition: 0.6s;
@@ -108,28 +110,60 @@ header {
 
 /*---------------------*/
 
-.author-note {
+/*main*/
+.container {
+  background: rgb(201,223,220);
+  background: linear-gradient(360deg, rgba(201,223,220,1) 49%, rgba(239,246,247,1) 96%);
+  height: auto;
   display: flex;
-  justify-content: center;
-  height: 100vh; /* Adjust the height of the container as needed */
+  position: relative;
 }
 
-.note-text {
-  margin: 50px;
-  flex-basis: 50%;
-  text-align: center;
-  font-size: 20px;
-  color: black;
+/*title*/
+.title-main-page{
+  flex-basis: 1px; /* Set the initial width to 200 pixels */
+  flex-grow: 0; /* Prevent the item from growing */
+  flex-shrink: 0; /* Prevent the item from shrinking */
+  margin: 60px;
 }
+
+.title-main-page h1{
+  font-size: 120px;
+  text-align: center;
+  margin: 0;
+}
+
+.author-note{
+  position:absolute;
+  flex-basis: 1px; /* Set the initial width to 200 pixels */
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  flex-grow: 0; /* Prevent the item from growing */
+  flex-shrink: 0; /* Prevent the item from shrinking */
+}
+
+.author-note h2{
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.author-note p{
+  flex-basis: 200%;
+  background: #f0f8ff;
+  border-radius: 20px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 25px;
+}
+
 
 /* Media query for larger screens */
 @media (max-width: 768px) {
-  .title,
-  .left-nav,
-  .right-nav {
-    position: static; /* Reset position for mobile view */
-    transform: none; /* Reset transform for mobile view */
-    text-align: center; /* Center align the elements */
-    margin: 5px 0; /* Add margin for spacing */
+
+  .author-note {
+    position: static;
+    transform: none;
   }
 }
