@@ -73,15 +73,32 @@ header {
   text-align: left;
 }
 
-/*arrow dropdown*/
-.menu ul li .dropdown::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 9%;
-  transform: translateX(-50%);
-  border: 8px solid transparent;
-  border-bottom-color: #334044;
+.menu ul .left_dropdown_menu::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.menu ul .left_dropdown_menu:hover::after {
+  width: 50%;
+}
+
+.menu ul .right_menu::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.menu ul .right_menu:hover::after {
+  width: 50%;
 }
 
 /*Maerida title*/
