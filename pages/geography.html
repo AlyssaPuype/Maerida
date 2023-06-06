@@ -5,19 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../styles/geography.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;600;800&family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Roboto+Slab:wght@300;400;500;600;700&family=Sono:wght@700&family=Source+Code+Pro:wght@300;400;500;700&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/97542bafdf.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/97542bafdf.js" crossorigin="anonymous"></script>
     <title>Geography</title>
   </head>
   <body>
-    <header class="section-title">
+
+    <header class="header">
+      <h1 class="title">
+          GEOGRAPHY
+      </h1>
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="../index.html">HOME</a></li>
+            <li> <a href="#">LORE</a></li>
+            <li> <a href="geography.html" target="_blank">GEOGRAPHY</a></li>
+            <li> <a href="#">TIMELINE</a></li>
+            <li> <a href="#">CHARACTERS</a></li>
+            <li> <a href="#">CREATURES</a></li>
+            <li> <a href="#">FAUNA</a></li>
+            <li> <a href="#">FLORA</a></li>
+            <li> <a href="#">ART</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-ellipsis" style="color: #fefefe;" onclick="showMenu()"></i>
+</header>
+
+<section class="infobox">
+  <p>
+    On Maerida you will find a total of five continents, listed down below.
+    This section will give you a short description and a little insight on the unique areas of each continent.
+  </p>
+</section>
+
+    <section class="section-title">
       <h2>
         Click on the continents to read a description and discover their
         regions.
       </h2>
-    </header>
+    </section>
 
     <main>
       <div class="continent">
-      <button type="button" class="collapsible">Open Section 1</button>
+      <button type="button" class="collapsible">AKAPUNTI</button>
       <div class="content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -29,7 +64,7 @@
     </div>
 
     <div class="continent">
-      <button type="button" class="collapsible">Open Section 2</button>
+      <button type="button" class="collapsible">ELCURIA</button>
       <div class="content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -41,7 +76,7 @@
     </div>
 
     <div class="continent">
-      <button type="button" class="collapsible">Open Section 3</button>
+      <button type="button" class="collapsible">FEYRATIR</button>
       <div class="content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -51,7 +86,31 @@
         </p>
       </div>
     </div>
-    
+
+    <div class="continent">
+      <button type="button" class="collapsible">SKYADKAR</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+
+    <div class="continent">
+      <button type="button" class="collapsible">YSWIND</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+
     </main>
 
     <script

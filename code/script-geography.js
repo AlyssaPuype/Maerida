@@ -1,3 +1,12 @@
+//------TOGGLE MENU
+let navLinks = document.getElementById("navLinks");
+const showMenu = () => {
+    navLinks.style.right = "0";
+}
+const hideMenu = () => {
+    navLinks.style.right = "-100%";
+}
+
 let coll = document.getElementsByClassName("collapsible");
 let i;
 
@@ -12,3 +21,5 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
