@@ -66,6 +66,14 @@ body {
   margin: 20px 10px 20px;
 }
 
+ /*---------- STATUS PAGES ----- */
+
+ .status{
+  color: #e67c7c;
+  font-size: 15px;
+}
+
+/*---------------------------- */
 
 .section-title h2 {
   margin: 20px;

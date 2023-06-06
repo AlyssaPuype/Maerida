@@ -68,6 +68,15 @@ body {
     margin: 20px 10px 20px;
   }
 
+  /*---------- STATUS PAGES ----- */
+
+  .status{
+    color: #e67c7c;
+    font-size: 15px;
+  }
+
+  /*---------------------------- */
+
   .main-page{
     margin: 0;
     padding: 0;
@@ -100,6 +109,10 @@ body {
     font-size: 15px;
     margin: 10px 10px 10px;
 
+  }
+
+  .keywords{
+    margin: 20px;
   }
   
   footer {
