@@ -8,37 +8,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;600;800&family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Roboto+Slab:wght@300;400;500;600;700&family=Sono:wght@700&family=Source+Code+Pro:wght@300;400;500;700&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
-  </head>
+<script src="https://kit.fontawesome.com/97542bafdf.js" crossorigin="anonymous"></script></head>
   <body>
   
-    <header>
+    <header class="header">
       <h1 class="title">
           MAERIDA
       </h1>
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-regular fa-circle-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="#">HOME</a></li>
+            <li> <a href="#">LORE</a></li>
+            <li> <a href="pages/geography.html" target="_blank">GEOGRAPHY</a></li>
+            <li> <a href="#">TIMELINE</a></li>
+            <li> <a href="#">CHARACTERS</a></li>
+            <li> <a href="#">CREATURES</a></li>
+            <li> <a href="#">FAUNA</a></li>
+            <li> <a href="#">FLORA</a></li>
+            <li> <a href="#">ART</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-ellipsis" style="color: #fefefe;" onclick="showMenu()"></i>
 </header>
 
 <div class="container">
-  <nav class="navbar">
-      <h3 class="nav-title">
-          MENU
-      </h3>
-      <ul class="nav-menu">
-          <li> <a href="#">HOME</a></li>
-          <li> <a href="#">LORE</a></li>
-          <li> <a href="pages/geography.html">GEOGRAPHY</a></li>
-          <li> <a href="#">TIMELINE</a></li>
-          <li> <a href="#">CHARACTERS</a></li>
-          <li> <a href="#">CREATURES</a></li>
-          <li> <a href="#">FAUNA</a></li>
-          <li> <a href="#">FLORA</a></li>
-          <li> <a href="#">ART</a></li>
-      </ul>
-  </nav>
+  
   <main class="main-page">
       <article class="message">
              <p>
               This documented webpage is dedicated to my world-building projec "World Maerida".
               This is personal use only. 
+
              </p> 
       </article>
   </main>
