@@ -9,7 +9,6 @@ body {
   overflow-y: hidden;
 }
 
-
   .header {
     display: flex;
     align-items: center;
@@ -77,6 +76,10 @@ body {
 
   /*---------------------------- */
 
+ .container{
+  padding: 20px;
+ }
+
   .main-page{
     margin: 0;
     padding: 0;
@@ -84,7 +87,6 @@ body {
   }
 
   .author-message{
-    margin: 20px;
     padding: 10px;
     height: auto;
     border: 1px solid transparent;
@@ -112,9 +114,8 @@ body {
   }
 
   .keywords{
-    width: 95vw;
     height: auto;
-    margin: 20px;
+    padding: 20px;
   }
   
   footer {
