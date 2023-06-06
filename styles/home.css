@@ -5,12 +5,8 @@
 
 body {
   background: rgb(232, 222, 204);
-  font-family: 'Roboto Slab', serif;
-}
+  font-family: 'Roboto Mono', monospace;}
 
-p {
-  font-size: 14px;
-}
 
 header {
   width: 100%;
@@ -31,7 +27,7 @@ header .title {
 
 .navbar {
   background: #fff;
-  height: 370px;
+  height: auto;
 }
 
 .navbar .nav-title {
