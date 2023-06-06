@@ -4,5 +4,5 @@ const showMenu = () => {
     navLinks.style.right = "0";
 }
 const hideMenu = () => {
-    navLinks.style.right = "-600px";
+    navLinks.style.right = "-100%";
 }

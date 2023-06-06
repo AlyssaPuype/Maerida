@@ -52,7 +52,7 @@ body {
   }
 
   .nav-links a:hover {
-    color: #e5ebc7;
+    color: #c3f5a5;
     text-decoration: none;
   }
   
@@ -101,6 +101,7 @@ body {
     margin: 10px 10px 10px;
 
   }
+  
   footer{
     margin: 10px;
     padding: 5px;
