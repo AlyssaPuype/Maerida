@@ -23,7 +23,7 @@ body {
 
 .nav-links {
   position: fixed;
-  right: -600px;
+  right: -100%;
   top: 0;
   height: 100%;
   background-color: #1a1a1a;
