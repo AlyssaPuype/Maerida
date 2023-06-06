@@ -111,7 +111,10 @@ body {
 
   }
 
+
   .keywords{
+    width: 95vw;
+    height: auto;
     margin: 20px;
   }
   
