@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="../styles/geography.css">   
-     <title>Geography</title>
-</head>
-<body>
-    sdfsd
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/geography.css" />
+    <title>Geography</title>
+  </head>
+  <body>
+    <article class="section-title">
+      <h2>
+        Click on the continents to read a description and discover their
+        regions.
+      </h2>
+    </article>
+
+    <article class="container">
+        <div class="continent-grid" onclick="showContent('content1')">
+          <h3>Akapunti</h3>
+          <div class="dropdown-content" id="content1">
+            <p class="description">
+              dsjdlfjlskdfjsdklfjlsd
+            </p>
+            <ul>
+              <li><a href="#">Ahmanzi</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="continent-grid" onclick="showContent('content2')">
+          <h3>Elcuria</h3>
+          <div class="dropdown-content" id="content2">
+            <!-- Dropdown content for Elcuria -->
+          </div>
+        </div>
+      
+        <!-- Add similar markup for other continents -->
+      
+      </article>
+      
+
+    <script
+    charset="utf-8"
+    src="../code/script-geography.js"
+    type="text/javascript"
+  ></script>
+  </body>
 </html>
