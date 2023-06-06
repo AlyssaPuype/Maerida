@@ -4,7 +4,7 @@
 }
 
 body {
-  background: rgb(236, 234, 228);
+  background: rgb(237, 246, 240);
   font-family: 'Roboto Mono', monospace;}
 
 
@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #333333;
+    background: #1a1a1a;
   }
   
   .title {
@@ -23,28 +23,34 @@ body {
   
   .nav-links {
     position: fixed;
-    right: -200px;
+    right: -600px;
     top: 0;
-    height: auto;
-    background-color: #333333;
-    width: 140px;
+    height: 100%;
+    background-color: #1a1a1a;
+    width: 100%;
     z-index: 1;
     transition: right 0.5s ease;
   }
   
   .nav-links ul {
     list-style: none;
-    text-align: center;
+    text-align: left;
+    font-size: 30px;
     padding: 0;
     margin-bottom: 0;
   }
   
   .nav-links li {
-    padding: 10px;
+    padding: 12px;
   }
   
   .nav-links a {
     color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    color: #e5ebc7;
     text-decoration: none;
   }
   
@@ -58,6 +64,33 @@ body {
     cursor: pointer;
     font-size: 30px;
     margin: 20px 10px 20px;
+  }
+
+  .main-page{
+    margin: 5px;
+    height: auto;
+  }
+
+  .author-message{
+    margin: 25px;
+    padding: 20px;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #fff;
+  }
+
+  .date{
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  .line {
+    border-top: 1px solid #000000;
+  }
+
+  .note{
+    margin-top: 10px;
   }
   
   @media screen and (min-width: 768px) {
