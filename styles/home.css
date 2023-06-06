@@ -1,169 +1,67 @@
-/* Reset default styles for the list */
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #e0f2f9;
-  font-family: "Josefin Sans", sans-serif;
-  box-sizing: border-box;
+  background: rgb(232, 222, 204);
+  font-family: "Josefin", monospace;
+}
+
+p {
+  font-size: 14px;
 }
 
 header {
+  width: 100%;
+  height: 50px;
+  background: rgb(165, 159, 147);
+}
+
+header .title {
   text-align: center;
-  background-color: #fff;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 125px;
-}
-
-.menu ul {
-  display: flex;
-  align-items: center;
-}
-
-/*titles */
-.menu ul li {
-  list-style: none;
-  padding: 10px; /*if too small -> problems with mouseover*/
-}
-
-/*titles */
-.menu ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-  padding: 0px 20px;
-}
-
-.menu ul li a:hover {
-  color: rgb(181, 119, 61);
-}
-
-/*dropdown menu */
-.menu ul li .dropdown {
-  display: none;
-  position: absolute;
-  width: 65%;
-  height: 25px;
-  background: rgba(222, 224, 224, 0.5);
-  padding: 3px 0px;
-  margin-top: 14px;
-}
-
-/*dropdown menu text*/
-.menu ul li ul li a {
-  color: black;
-  font-size: 14px;
-  transition: 0.4s;
-  padding: 10px;
-}
-
-/*dropdown menu text when hovering*/
-.menu ul li ul li a:hover {
-  color: rgb(181, 119, 61);
-}
-
-.menu ul li.left_dropdown_menu {
-  text-align: left;
-}
-
-.menu ul .left_dropdown_menu::after {
-  content: "";
-  width: 2px;
-  height: 2px;
-  background: black;
-  border: 1px solid black;
-  display: block;
-  margin: auto;
-  transition: 0.6s;
-}
-
-.menu ul .left_dropdown_menu:hover::after {
-  width: 50%;
-}
-
-.menu ul .right_menu::after {
-  content: "";
-  width: 2px;
-  height: 2px;
-  background: black;
-  border: 1px solid black;
-  display: block;
-  margin: auto;
-  transition: 0.6s;
-}
-
-.menu ul .right_menu:hover::after {
-  width: 50%;
-}
-
-/*Maerida title*/
-.menu ul li .title {
-  font-size: 70px;
-}
-
-/*---------------------*/
-
-/*main*/
 .container {
-  background: rgb(201,223,220);
-  background: linear-gradient(360deg, rgba(201,223,220,1) 49%, rgba(239,246,247,1) 96%);
-  height: auto;
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 15px;
+  margin: 20px 10px 20px;
 }
 
-/*title*/
-.title-main-page{
-  flex-basis: 1px; /* Set the initial width to 200 pixels */
-  flex-grow: 0; /* Prevent the item from growing */
-  flex-shrink: 0; /* Prevent the item from shrinking */
-  margin: 60px;
+.navbar {
+  background: #fff;
+  height: 370px;
 }
 
-.title-main-page h1{
-  font-size: 120px;
+.navbar .nav-title {
+background: rgb(165, 159, 147);
+height: 30px;
   text-align: center;
-  margin: 0;
 }
 
-.author-note{
-  position:absolute;
-  flex-basis: 1px; /* Set the initial width to 200 pixels */
-  top: 60%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  flex-grow: 0; /* Prevent the item from growing */
-  flex-shrink: 0; /* Prevent the item from shrinking */
+.navbar .nav-menu{
+    padding: 10px 10px 10px;
+    list-style: none;
 }
 
-.author-note h2{
-  margin-left: 30px;
-  margin-bottom: 5px;
+.navbar .nav-menu li{
+    height: 20px;
+    padding: 10px;
 }
 
-.author-note p{
-  flex-basis: 200%;
-  background: #f0f8ff;
-  border-radius: 20px;
-  padding: 20px 20px;
-  box-sizing: border-box;
-  text-align: justify;
-  font-size: 25px;
+.navbar .nav-menu li:hover{
+    background-color: rgb(210, 218, 226);
 }
 
+.navbar .nav-menu a{
+    text-decoration: none;
+    color: black;
+}
 
-/* Media query for larger screens */
-@media (max-width: 768px) {
+.main-page {
+    background: rgb(232, 222, 204);
+    box-shadow: inset 6px 6px 10px 0 rgba(78, 77, 75, 0.1), inset -6px -6px 10px 0 rgba(78, 77, 75, 0.1);
+    padding: 15px;
 
-  .author-note {
-    position: static;
-    transform: none;
-  }
 }
