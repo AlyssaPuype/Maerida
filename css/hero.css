@@ -1,0 +1,8 @@
+* {
+    background-image: url('../img/hero/Background.png');
+    background-position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
