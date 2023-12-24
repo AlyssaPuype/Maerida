@@ -5,8 +5,43 @@
 
 body {
     font-family: Jetbrains Mono;
+    background-image: url("../img/hero/Background.png");
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
+    height: auto;
     display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 70px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    width: auto;
+    font-style: italic;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.hero {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: grid;
+    text-align: center;
+    color: white;
+}
+
+.hero .title {
+    font-size: 6em;
 }
