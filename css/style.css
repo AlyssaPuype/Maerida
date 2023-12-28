@@ -5,18 +5,52 @@
 
 body {
     font-family: Jetbrains Mono;
-    background-image: url("../img/hero/Background.png");
-    background-size: cover;
+    background: rgb(165, 165, 165);
+    padding: 0px 30px;
+    position: relative;
 }
+
+.backgroundImage {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.9;
+    object-fit: cover;
+    object-position: center center;
+}
+
 
 header {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu {
-    height: auto;
+header .topbar {
     display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+header #currentDateContainer {
+    padding: 20px;
+    width: 160px;
+}
+
+header #loginButton {
+    padding: 20px;
+}
+
+header .menu {
+    padding: 20;
+    height: 60px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -34,14 +68,81 @@ header {
     list-style: none;
 }
 
-.hero {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    display: grid;
-    text-align: center;
+header h1 {
+    display: flex;
+    flex-direction: column;
     color: white;
+    font-size: 128px;
+    text-align: center;
+    font-weight: 500;
 }
 
-.hero .title {
-    font-size: 6em;
+header h1 span {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.searchbar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar input {
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+    width: 650px;
+    background: #DFE0E0;
+    border: 3px solid white;
+    border-radius: 20px;
+    text-align: right;
+}
+
+.newsSection {
+    margin-top: 122px;
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+}
+
+.newsSection .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.newsSection .contentList {
+    width: 560px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsSection .contentList .contentCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.contentList .contentCard p {
+    margin: 0 10px 0 0;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.newsSection .contentList .contentCard .content {
+    background: rgb(219, 219, 219);
+}
+
+footer {
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
